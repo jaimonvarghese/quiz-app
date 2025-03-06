@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/widgets/start_screen.dart';
+import 'package:quiz_app/widgets/quiz.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -16,18 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Colors.red, Colors.black],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: StartScreen(),
-        ),
-      ),
+      home: Quiz(),
     );
   }
 }
